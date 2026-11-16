@@ -1,0 +1,60 @@
+name: meal_streak
+description: "Track mess meals, extra cravings, streaks and your monthly bill - 100% offline."
+publish_to: 'none'
+version: 1.1.0+2
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  intl: ^0.20.2
+  table_calendar: ^3.1.2
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  flutter_timezone: ^3.0.1
+  shared_preferences: ^2.3.2
+  fl_chart: ^0.69.0
+  permission_handler: ^11.3.1
+  mobile_scanner: ^7.0.0
+  url_launcher: ^6.3.1
+  crypto: ^3.0.6
+  http: ^1.2.0
+  package_info_plus: ^8.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.1
+  flutter_launcher_icons: ^0.14.1
+
+# ===== Flutter Section =====
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon.png
+    - assets/icon_foreground.png
+    
+
+# ===== Launcher Icon Config =====
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  adaptive_icon_background: "#FF6347"
+  adaptive_icon_foreground: "assets/icon_foreground.png"
+
+# ===== Splash Screen Config =====
+flutter_native_splash:
+  color: "#FF6347"
+  image: "assets/icon.png"
+  android_12:
+    image: "assets/icon.png"
+    color: "#FF6347"
